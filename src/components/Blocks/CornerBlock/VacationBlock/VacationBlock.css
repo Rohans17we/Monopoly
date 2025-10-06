@@ -1,0 +1,50 @@
+
+.vacation-block {
+  background: linear-gradient(135deg, #ffe082 0%, #ffd54f 50%, #ffb300 100%);
+  border: 3px solid #ff8f00;
+  box-shadow: 0 6px 20px rgba(255,179,0,0.3), inset 0 2px 4px rgba(255,255,255,0.4);
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vacation-block:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(255,179,0,0.4), inset 0 2px 4px rgba(255,255,255,0.4);
+}
+
+.corner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 0.3em;
+  z-index: 1;
+}
+
+.vacation-label {
+  color: #8f5000;
+  font-size: clamp(0.85rem, 2vmin, 1.5rem);
+  font-weight: 900;
+  margin-bottom: 0;
+  letter-spacing: 0.05em;
+  text-shadow: 0 2px 6px rgba(255,255,255,0.5), 0 1px 3px rgba(0,0,0,0.2);
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding: 0 0.2em;
+}
+
+.vacation-emoji {
+  font-size: clamp(1.5rem, 3.5vmin, 2.5rem);
+  margin-top: 0;
+}
